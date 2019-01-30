@@ -1,5 +1,5 @@
 ### Link NOW
-[Lien NOW](https://b3-footballmanager-mb6ryyb72.now.sh/)
+[Lien NOW](https://b3-footballmanager-lvc4l3n8q.now.sh/)
 
 ### Shéma app papier
 ![Schéma papier](https://github.com/RomainFon/b3-football-manager/blob/master/shema-papier.jpg)
