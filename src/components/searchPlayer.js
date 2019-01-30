@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import './../styles/searchPlayer.css'
 
 class SearchPlayer extends Component {
     constructor(){
@@ -31,10 +32,12 @@ class SearchPlayer extends Component {
     resultPlayer(){
         let listRenderPlayers = []
         if(this.state.data !== null){
-            const maxPlayerRender = Math.min(this.state.data.result.length, 5)
-            for(let i = 0; i < maxPlayerRender; i++){
-                const htmlRender = <div key={i} className={'player'} onClick={() => this.attributePlayer(this.state.data.result[i])}>{ this.state.data.result[i].player_name }</div>
-                listRenderPlayers.push(htmlRender)
+            if(this.state.data.result !== undefined){
+                const maxPlayerRender = Math.min(this.state.data.result.length, 5)
+                for(let i = 0; i < maxPlayerRender; i++){
+                    const htmlRender = <div key={i} className={'player'} onClick={() => this.attributePlayer(this.state.data.result[i])}>{ this.state.data.result[i].player_name }</div>
+                    listRenderPlayers.push(htmlRender)
+                }
             }
         }
         return listRenderPlayers

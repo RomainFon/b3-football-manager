@@ -1,0 +1,42 @@
+.contentSearchPlayer{
+    width: 50%;
+}
+
+.searchPlayer{
+    border: 10px tomato solid;
+    border-radius: 10px;
+    height: 440px;
+    display: inline-block;
+}
+
+.selectPlayer label{
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+.selectPlayer input{
+    border: 2px solid black;
+    border-radius: 4px;
+    width: 80%;
+    height: 40px;
+}
+
+.listRenderPlayers{
+    margin: 20px 10% 0 10%;
+}
+
+.listRenderPlayers .player{
+    padding: 16px 16px;
+    color: white;
+    background-color: black;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    height: 80%;
+}
+
+.listRenderPlayers .player:hover{
+    background-color: tomato;
+}

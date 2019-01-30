@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  display: flex;
+}
+
+.contentTerrain{
+    width: 50%;
 }
 
 .App-logo {

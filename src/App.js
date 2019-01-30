@@ -36,11 +36,13 @@ class App extends Component {
         console.log(this.state)
         return (
             <div className="App">
-                <Terrain
-                    playersList={this.state.playersList}
-                    playerSelected={this.playerSelected}
-                />
-                {this.state.idPlayer && <SearchPlayer playerAttributed={this.playerAttributed}/> }
+                <div className={'contentTerrain'}>
+                    <Terrain
+                        playersList={this.state.playersList}
+                        playerSelected={this.playerSelected}
+                    />
+                </div>
+                {this.state.idPlayer && <div className={'contentSearchPlayer'}><SearchPlayer playerAttributed={this.playerAttributed}/></div> }
             </div>
         );
   }

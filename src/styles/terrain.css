@@ -1,0 +1,102 @@
+.terrain{
+     width: 420px;
+     height: 550px;
+    background-image: url('../terrain.png');
+     background-size: cover;
+    background-position: center;
+    border: 10px tomato solid;
+    border-radius: 10px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.terrain div{
+    display: inline-block;
+}
+
+.player input{
+    background-color: tomato;
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+.player input:focus{
+    background-color: #61dafb;
+}
+.terrain .player0{
+    position: absolute;
+    left: 50%;
+    top: 2%;
+    transform: translateX(-50%);
+}
+
+.terrain .player1{
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    transform: translateX(-50px);
+}
+.terrain .player2{
+    position: absolute;
+    top: 25%;
+    left: 30%;
+}
+.terrain .player3{
+    position: absolute;
+    top: 25%;
+    left: 57%;
+}
+.terrain .player4{
+    position: absolute;
+    top: 25%;
+    left: 80%;
+}
+
+.terrain .player5{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translateX(-50px);
+}
+.terrain .player6{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.terrain .player7{
+    position: absolute;
+    top: 50%;
+    left: 80%
+}
+.terrain .player8{
+    position: absolute;
+    top: 75%;
+    left: 20%;
+    transform: translateX(-50px);
+}
+.terrain .player9{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.terrain .player10{
+    position: absolute;
+    top: 75%;
+    left: 80%;
+}
+
+.playerName{
+    position: absolute;
+    transform: translateY(-50%);
+    background-color: white;
+    padding: 5px 10px;
+    font-size: .8em;
+    border-radius: 10px;
+}
+

@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Player from './player'
+import './../styles/terrain.css'
 
 class Terrain extends Component {
     constructor(){
@@ -20,9 +21,9 @@ class Terrain extends Component {
 
     render() {
         const players = this.props.playersList.map( (player, index) =>
-            <div key={index} id={index}>
+            <div key={index} id={index} className={`${'player'+index} ${'player'}`}>
                 {player && <Player name={player.player_name}/>}
-                <input type={'button'} value={'Choose it'} onClick={this.playerSelected}/>
+                <input type={'button'} value={''} onClick={this.playerSelected}/>
             </div>
         )
         return (
