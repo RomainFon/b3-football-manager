@@ -1,27 +1,48 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Terrain from './components/terrain';
+import SearchPlayer from './components/searchPlayer';
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
+    constructor(){
+        super()
+        let listPlayers = []
+        for(let i = 0; i < 11; i++){
+            listPlayers[i] = ''
+        }
+        this.state = {
+            idPlayer : null,
+            playersList : listPlayers
+        }
+        this.playerSelected = this.playerSelected.bind(this)
+        this.playerAttributed = this.playerAttributed.bind(this)
+    }
+
+    playerSelected(data){
+        this.setState({
+            idPlayer: data,
+        })
+    }
+
+    playerAttributed(data){
+        let listPlayersCopy = this.state.playersList.slice()
+        listPlayersCopy[this.state.idPlayer] = data
+        this.setState({
+            playersList: listPlayersCopy,
+        })
+    }
+
+    render() {
+        console.log(this.state)
+        return (
+            <div className="App">
+                <Terrain
+                    playersList={this.state.playersList}
+                    playerSelected={this.playerSelected}
+                />
+                {this.state.idPlayer && <SearchPlayer playerAttributed={this.playerAttributed}/> }
+            </div>
+        );
   }
 }
 
