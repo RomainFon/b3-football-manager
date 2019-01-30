@@ -3,9 +3,27 @@
   display: flex;
 }
 
+.contentSearchPlayer{
+  width: 50%;
+}
 .contentTerrain{
     width: 50%;
 }
+
+@media only screen and (max-width:800px) {
+  .App {
+    display: inline;
+  }
+  .contentSearchPlayer{
+    width: 100%;
+  }
+  .contentTerrain{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
