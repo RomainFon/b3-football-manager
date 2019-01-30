@@ -1,7 +1,7 @@
 .terrain{
      width: 420px;
      height: 550px;
-    background-image: url('../terrain.png');
+    background-image: url('../images/terrain.png');
      background-size: cover;
     background-position: center;
     border: 10px tomato solid;
