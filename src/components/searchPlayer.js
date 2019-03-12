@@ -27,6 +27,7 @@ class SearchPlayer extends Component {
 
     attributePlayer(data){
         this.props.playerAttributed(data)
+        document.querySelector('.selectPlayer input').value = ''
     }
 
     resultPlayer(){

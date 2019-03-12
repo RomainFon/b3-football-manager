@@ -2,6 +2,9 @@
   text-align: center;
   display: flex;
 }
+body{
+  margin-top: 20px;
+}
 
 .contentSearchPlayer{
   width: 50%;

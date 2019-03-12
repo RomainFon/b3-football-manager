@@ -25,6 +25,9 @@ class App extends Component {
     }
 
     playerAttributed(data){
+        let playerInput = '.player'+this.state.idPlayer
+        document.querySelector(playerInput+' input').classList.remove("selected")
+        document.querySelector(playerInput+' input').classList.add("attributed")
         let listPlayersCopy = this.state.playersList.slice()
         listPlayersCopy[this.state.idPlayer] = data
         this.setState({

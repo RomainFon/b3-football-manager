@@ -1,14 +1,14 @@
 .terrain{
-     width: 420px;
-     height: 550px;
+    width: 420px;
+    height: 550px;
     background-image: url('../images/terrain.png');
-     background-size: cover;
+    background-size: cover;
     background-position: center;
     border: 10px tomato solid;
     border-radius: 10px;
     position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+    float: right;
+    margin-right: 20px;
 }
 
 .terrain div{
@@ -24,8 +24,11 @@
     cursor: pointer;
 }
 
-.player input:focus{
+.player .selected{
     background-color: #61dafb;
+}
+.player .attributed{
+    background-color: green;
 }
 .terrain .player0{
     position: absolute;
@@ -93,10 +96,10 @@
 
 .playerName{
     position: absolute;
-    transform: translateY(-50%);
+    transform: translate(50%, -50%);
+    right: 50%;
     background-color: white;
     padding: 5px 10px;
     font-size: .8em;
     border-radius: 10px;
 }
-

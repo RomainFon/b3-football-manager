@@ -12,6 +12,7 @@ class Terrain extends Component {
     }
 
     playerSelected(event){
+        event.target.className += 'selected'
         this.setState({
             playerSelected: event.target.parentNode.id
         })

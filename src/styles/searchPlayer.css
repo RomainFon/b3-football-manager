@@ -5,6 +5,8 @@
     border-radius: 10px;
     height: 440px;
     display: inline-block;
+    float: left;
+    margin-left: 20px;
 }
 
 .selectPlayer label{
